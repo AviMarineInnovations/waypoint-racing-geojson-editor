@@ -1,5 +1,5 @@
 {
-  "name": "geojson editor",
+  "name": "waypoint-racing-geojson-editor",
   "version": "0.1.0",
   "description": "The modified version of Googles Simple GeoJSON Editor",
   "main": "index.html",
@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/tomscholz/geojson-editor#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.0.0"

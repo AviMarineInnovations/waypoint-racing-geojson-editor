@@ -22,10 +22,10 @@ gulp.task('compileJS', function () {
 
 // Watch files for changes and recompile
 gulp.task('watch', function() {
-    gulp.watch('css/styles.css', ['compileCSS']);
-    gulp.watch('js/editor.js', ['compileJS']);
+    gulp.watch('css/styles.css', gulp.series('compileCSS'));
+    gulp.watch('js/editor.js', gulp.series('compileJS'));
 });
 
-gulp.task('build', ['compileJS', 'compileCSS']);
+gulp.task('build', gulp.series('compileJS', 'compileCSS'));
 
-gulp.task('default', ['watch']);
+gulp.task('default', gulp.series('watch'));
